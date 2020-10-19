@@ -1,12 +1,5 @@
 package com.example.adsmobileapp.ui;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.viewpager.widget.ViewPager;
-
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -18,6 +11,12 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager.widget.ViewPager;
+
 import com.example.adsmobileapp.AdsApp;
 import com.example.adsmobileapp.R;
 import com.example.adsmobileapp.rest.RestManager;
@@ -25,8 +24,8 @@ import com.example.adsmobileapp.rest.endpoints.GetJobs;
 import com.example.adsmobileapp.rest.endpoints.Logout;
 import com.example.adsmobileapp.rest.model.Job;
 import com.example.adsmobileapp.rest.model.ResponseMessage;
-import com.example.adsmobileapp.ui.adapters.JobsListFragmentPagerAdapter;
 import com.example.adsmobileapp.ui.adapters.JobsAdapter;
+import com.example.adsmobileapp.ui.adapters.JobsListFragmentPagerAdapter;
 import com.example.adsmobileapp.ui.dialogs.CustomDialog;
 import com.example.adsmobileapp.ui.dialogs.ExperienceLevelDialog;
 import com.google.android.material.navigation.NavigationView;
@@ -85,6 +84,7 @@ public class ListofJobsActivity extends AppCompatActivity implements View.OnClic
         getListOfJobs();
     }
 
+
     private void initUI() {
         tvUsername = findViewById(R.id.tvUsername);
 
@@ -121,7 +121,7 @@ public class ListofJobsActivity extends AppCompatActivity implements View.OnClic
         ivLogOutLogin = findViewById(R.id.ivLoginLogout);
         ivLogOutLogin.setColorFilter(this.getResources().getColor(R.color.blue));
         if (AdsApp.getLocalData().getLoggedUser() != null) {
-            tvLogoutLogin.setText("Log out");
+            tvLogoutLogin.setText(getString(R.string.log_out));
             ivLogOutLogin.setImageDrawable(this.getResources().getDrawable(R.mipmap.logout));
             ivLogOutLogin.setColorFilter(this.getResources().getColor(R.color.blue));
             tvUsername.setText(AdsApp.getLocalData().getLoggedUser().getName());
@@ -241,14 +241,14 @@ public class ListofJobsActivity extends AppCompatActivity implements View.OnClic
     @Override
     public void onPageSelected(int position) {
         if (position == 0) {
-            tvTitle.setText("jobs");
+            tvTitle.setText(getString(R.string.jobs));
             tvListOfJobsBtn.setBackground(getResources().getDrawable(R.drawable.selected_toggle_button));
             tvListOfJobsBtn.setTextColor(getResources().getColor(R.color.white));
 
             tvListOfPostedJobsBtn.setBackground(getResources().getDrawable(R.drawable.not_selected_toggle_button));
             tvListOfPostedJobsBtn.setTextColor(getResources().getColor(R.color.black));
         } else {
-            tvTitle.setText("posted  jobs");
+            tvTitle.setText(getString(R.string.posted_jobs));
             tvListOfPostedJobsBtn.setBackground(getResources().getDrawable(R.drawable.selected_toggle_button));
             tvListOfPostedJobsBtn.setTextColor(getResources().getColor(R.color.white));
 

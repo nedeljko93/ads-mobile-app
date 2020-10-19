@@ -9,7 +9,6 @@ import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.adsmobileapp.AdsApp;
 import com.example.adsmobileapp.R;
 import com.example.adsmobileapp.rest.model.Job;
 

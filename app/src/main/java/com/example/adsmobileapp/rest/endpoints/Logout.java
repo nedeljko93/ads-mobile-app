@@ -1,7 +1,6 @@
 package com.example.adsmobileapp.rest.endpoints;
 
 import com.example.adsmobileapp.rest.RestApiConstants;
-import com.example.adsmobileapp.rest.model.RequestLogin;
 import com.example.adsmobileapp.rest.model.ResponseMessage;
 import com.example.adsmobileapp.rest.model.User;
 

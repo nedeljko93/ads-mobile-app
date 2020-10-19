@@ -8,7 +8,6 @@ import android.provider.OpenableColumns;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.adsmobileapp.R;
 import com.example.adsmobileapp.rest.model.Job;
@@ -46,7 +45,7 @@ public class JobApplyActivity extends BaseActivity implements View.OnClickListen
 
     @Override
     protected String getHeaderTitle() {
-        return "Apply for the " + job.getTitle();
+        return getString(R.string.apply_for_the_job, job.getTitle());
     }
 
     @Override
@@ -56,7 +55,7 @@ public class JobApplyActivity extends BaseActivity implements View.OnClickListen
 
     @Override
     protected String getMainButtonTitle() {
-        return "Apply";
+        return getString(R.string.apply);
     }
 
     @Override
@@ -98,7 +97,6 @@ public class JobApplyActivity extends BaseActivity implements View.OnClickListen
                 openFilePicker(PICK_COVER_LETTER);
                 break;
             case R.id.tvMainButton:
-                Toast.makeText(this, "Btn Clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.ivBackButton:
                 onBackPressed();

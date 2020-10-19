@@ -2,7 +2,6 @@ package com.example.adsmobileapp.rest.endpoints;
 
 import com.example.adsmobileapp.rest.RestApiConstants;
 import com.example.adsmobileapp.rest.model.Job;
-import com.example.adsmobileapp.rest.model.User;
 
 import java.util.List;
 

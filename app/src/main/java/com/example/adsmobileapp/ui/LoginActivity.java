@@ -1,28 +1,18 @@
 package com.example.adsmobileapp.ui;
 
 import android.content.Intent;
-import android.os.Bundle;
-import android.text.method.PasswordTransformationMethod;
-import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.TabHost;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.adsmobileapp.AdsApp;
 import com.example.adsmobileapp.R;
 import com.example.adsmobileapp.rest.RestManager;
-import com.example.adsmobileapp.rest.endpoints.GetAllUsers;
 import com.example.adsmobileapp.rest.endpoints.Login;
 import com.example.adsmobileapp.rest.model.RequestLogin;
 import com.example.adsmobileapp.rest.model.User;
 import com.google.android.material.textfield.TextInputEditText;
-
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -53,7 +43,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
 
     @Override
     protected String getHeaderTitle() {
-        return "Login";
+        return getString(R.string.login);
     }
 
     @Override
@@ -134,11 +124,11 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
     private boolean validation() {
         boolean isValid = true;
         if (etEmail.getText().toString().isEmpty() && !Patterns.EMAIL_ADDRESS.matcher(etEmail.getText().toString()).matches()) {
-            etEmail.setError("Enter email");
+            etEmail.setError(getString(R.string.enter_email));
             isValid = false;
         }
         if (etPassword.getText().toString().isEmpty()) {
-            etPassword.setError("Enter password");
+            etPassword.setError(getString(R.string.enter_password));
             isValid = false;
         }
         return isValid;

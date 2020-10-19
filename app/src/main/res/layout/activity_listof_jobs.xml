@@ -24,7 +24,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.8"
-                android:text="Jobs"
+                android:text="@string/jobs"
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textColor="@color/blue"
@@ -76,7 +76,7 @@
                     android:layout_weight="0.5"
                     android:background="@drawable/selected_toggle_button"
                     android:padding="5dp"
-                    android:text="Jobs"
+                    android:text="@string/jobs"
                     android:textAlignment="center"
                     android:textAllCaps="true"
                     android:textColor="@color/white"
@@ -90,7 +90,7 @@
                     android:layout_weight="0.5"
                     android:background="@drawable/not_selected_toggle_button"
                     android:padding="5dp"
-                    android:text="posted jobs"
+                    android:text="@string/posted_jobs"
                     android:textAlignment="center"
                     android:textAllCaps="true"
                     android:textColor="@color/black"
@@ -146,7 +146,7 @@
                     android:paddingTop="3dp"
                     android:paddingEnd="10dp"
                     android:paddingBottom="3dp"
-                    android:text="Post Job"
+                    android:text="@string/post_job"
                     android:textAlignment="center"
                     android:textColor="@color/main_btn_text_selector"
                     android:textSize="20sp" />
@@ -177,7 +177,7 @@
                     android:id="@+id/tvLogOut"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Login"
+                    android:text="@string/login"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -193,7 +193,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:text="Filters"
+                android:text="@string/filters"
                 android:textAlignment="center"
                 android:textColor="@color/blue"
                 android:textSize="22sp"
@@ -210,7 +210,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="Location"
+                android:text="@string/location"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
@@ -219,7 +219,7 @@
                 android:id="@+id/tvPickedLocation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Not selected"
+                android:text="@string/not_selected"
                 android:textAlignment="center" />
 
 
@@ -228,7 +228,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Working time"
+                android:text="@string/working_time"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
@@ -258,7 +258,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Professional qualifications"
+                android:text="@string/professional_qualifications"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
@@ -267,7 +267,7 @@
                 android:id="@+id/tvProfessionalQualifications"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Not selected"
+                android:text="@string/not_selected"
                 android:textAlignment="center" />
 
             <TextView
@@ -275,7 +275,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Experience level"
+                android:text="@string/experience_level"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
@@ -285,7 +285,7 @@
                 android:id="@+id/tvPickedCareerFields"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Not selected"
+                android:text="@string/not_selected"
                 android:textAlignment="center" />
 
             <View

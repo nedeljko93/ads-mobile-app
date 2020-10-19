@@ -41,7 +41,7 @@ public class JobDetailsActivity extends BaseActivity implements View.OnClickList
 
     @Override
     protected String getMainButtonTitle() {
-        return "Apply";
+        return getString(R.string.apply);
     }
 
     @Override

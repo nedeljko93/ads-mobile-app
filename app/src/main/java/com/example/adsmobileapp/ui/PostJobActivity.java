@@ -1,10 +1,6 @@
 package com.example.adsmobileapp.ui;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.os.Bundle;
-import android.util.TimeUtils;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
@@ -16,7 +12,6 @@ import com.example.adsmobileapp.R;
 import com.example.adsmobileapp.rest.RestManager;
 import com.example.adsmobileapp.rest.endpoints.AddJob;
 import com.example.adsmobileapp.rest.model.Job;
-import com.example.adsmobileapp.rest.model.MockListOfJobs;
 import com.example.adsmobileapp.rest.model.ResponseMessage;
 import com.example.adsmobileapp.ui.dialogs.CustomDialog;
 import com.example.adsmobileapp.utils.Constants;
@@ -65,9 +60,9 @@ public class PostJobActivity extends BaseActivity implements CompoundButton.OnCh
     @Override
     protected String getHeaderTitle() {
         if (job != null) {
-            return "Update job";
+            return getString(R.string.update_job);
         }
-        return "Post Job";
+        return getString(R.string.post_job);
     }
 
     @Override
@@ -121,7 +116,7 @@ public class PostJobActivity extends BaseActivity implements CompoundButton.OnCh
     }
 
     public void populateData() {
-        tvMainButton.setText("Apply Changes");
+        tvMainButton.setText(getString(R.string.apply_changes));
         etTitle.setText(job.getTitle());
         etDescription.setText(job.getDescription());
         etRequredSkills.setText(job.getRequredSkills());
@@ -203,35 +198,35 @@ public class PostJobActivity extends BaseActivity implements CompoundButton.OnCh
     private boolean validation() {
         boolean val = true;
         if (etTitle.getText().toString().isEmpty()) {
-            etTitle.setError("Invalid");
+            etTitle.setError(getString(R.string.invalid));
             val = false;
         }
         if (etDescription.getText().toString().isEmpty()) {
-            etDescription.setError("Invalid");
+            etDescription.setError(getString(R.string.invalid));
             val = false;
         }
         if (etRequredSkills.getText().toString().isEmpty()) {
-            etRequredSkills.setError("Invalid");
+            etRequredSkills.setError(getString(R.string.invalid));
             val = false;
         }
         if (etBonusSkills.getText().toString().isEmpty()) {
-            etBonusSkills.setError("Invalid");
+            etBonusSkills.setError(getString(R.string.invalid));
             val = false;
         }
         if (etCompanyName.getText().toString().isEmpty()) {
-            etCompanyName.setError("Invalid");
+            etCompanyName.setError(getString(R.string.invalid));
             val = false;
         }
         if (etOffer.getText().toString().isEmpty()) {
-            etOffer.setError("Invalid");
+            etOffer.setError(getString(R.string.invalid));
             val = false;
         }
         if (skillLevel.isEmpty()) {
-            Toast.makeText(PostJobActivity.this, "Please select requred level", Toast.LENGTH_SHORT).show();
+            Toast.makeText(PostJobActivity.this, getString(R.string.select_requred_level), Toast.LENGTH_SHORT).show();
             val = false;
         }
-        if (tvPickedLocation.equals("Pick location")) {
-            Toast.makeText(PostJobActivity.this, "Pick location", Toast.LENGTH_SHORT).show();
+        if (tvPickedLocation.equals(getString(R.string.pick_location))) {
+            Toast.makeText(PostJobActivity.this, getString(R.string.pick_location), Toast.LENGTH_SHORT).show();
             val = false;
         }
         return val;

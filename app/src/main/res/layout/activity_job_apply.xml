@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:hint="Name and lastname"
+        android:hint="@string/name_and_lastname"
         android:textColorHint="@color/black"
         app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
 
@@ -30,7 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:hint="Email"
+        android:hint="@string/email"
         android:textColorHint="@color/black"
         app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
 
@@ -46,7 +46,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:hint="Phone number"
+        android:hint="@string/phone_number"
         android:textColorHint="@color/black"
         app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
 
@@ -71,7 +71,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Not selected" />
+        android:text="@string/not_selected" />
 
     <ImageView
         android:id="@+id/ivCoverLetter"
@@ -86,6 +86,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Not selected" />
+        android:text="@string/not_selected" />
 
 </LinearLayout>

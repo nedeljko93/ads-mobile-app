@@ -1,16 +1,10 @@
 package com.example.adsmobileapp.ui;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.os.Bundle;
-import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.adsmobileapp.AdsApp;
 import com.example.adsmobileapp.R;
 import com.example.adsmobileapp.rest.RestManager;
 import com.example.adsmobileapp.rest.endpoints.AddUser;
@@ -41,7 +35,7 @@ public class SignUpActivity extends BaseActivity implements View.OnClickListener
 
     @Override
     protected String getHeaderTitle() {
-        return "Sign up";
+        return getString(R.string.sign_up);
     }
 
     @Override
@@ -51,7 +45,7 @@ public class SignUpActivity extends BaseActivity implements View.OnClickListener
 
     @Override
     protected String getMainButtonTitle() {
-        return "Sign up";
+        return getString(R.string.sign_up);
     }
 
     @Override
@@ -93,7 +87,7 @@ public class SignUpActivity extends BaseActivity implements View.OnClickListener
             RestManager.getInstance().getService(AddUser.class).addUser(user).enqueue(new Callback<User>() {
                 @Override
                 public void onResponse(Call<User> call, Response<User> response) {
-                    Toast.makeText(SignUpActivity.this, "You created account successfully", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignUpActivity.this, getString(R.string.succes_msg), Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(SignUpActivity.this, LoginActivity.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
                     startActivity(intent);
@@ -101,8 +95,8 @@ public class SignUpActivity extends BaseActivity implements View.OnClickListener
 
                 @Override
                 public void onFailure(Call<User> call, Throwable t) {
-                    Toast.makeText(SignUpActivity.this, "Error message: " + t.getMessage(), Toast.LENGTH_SHORT).show();
-                    Log.e("ASD", "onFailure: " + t.getMessage());
+                    Toast.makeText(SignUpActivity.this,  t.getMessage(), Toast.LENGTH_SHORT).show();
+
                 }
             });
 
@@ -113,23 +107,23 @@ public class SignUpActivity extends BaseActivity implements View.OnClickListener
     private boolean validation() {
         boolean isValid = true;
         if (etEmail.getText().toString().isEmpty() && !Patterns.EMAIL_ADDRESS.matcher(etEmail.getText().toString()).matches()) {
-            etEmail.setError("Enter correct email");
+            etEmail.setError(getString(R.string.email_validation_msg));
             isValid = false;
         }
         if (etName.getText().toString().isEmpty()) {
-            etName.setError("Enter name");
+            etName.setError(getString(R.string.name_validation_msg));
             isValid = false;
         }
         if (etLastName.getText().toString().isEmpty()) {
-            etLastName.setError("Enter lastname");
+            etLastName.setError(getString(R.string.lastname_validation_msg));
             isValid = false;
         }
         if (etPassword.getText().toString().isEmpty()) {
-            etPassword.setError("Enter password");
+            etPassword.setError(getString(R.string.password_validation_msg));
             isValid = false;
         }
         if (etRepeatPassword.getText().toString().isEmpty() || !etPassword.getText().toString().equals(etRepeatPassword.getText().toString())) {
-            etRepeatPassword.setError("Enter correct repeat password");
+            etRepeatPassword.setError(getString(R.string.repeat_password_validation_msg));
             isValid = false;
         }
 

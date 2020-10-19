@@ -15,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:hint="Title"
+            android:hint="@string/title"
             android:textColorHint="@color/black"
             app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
 
@@ -31,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:hint="Description"
+            android:hint="@string/description"
             android:textColorHint="@color/black"
             app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
 
@@ -47,7 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:hint="Requred skills"
+            android:hint="@string/requierments"
             android:textColorHint="@color/black"
             app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
 
@@ -63,7 +63,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:hint="Bonus skills"
+            android:hint="@string/bonus_skills"
             android:textColorHint="@color/black"
             app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
 
@@ -79,7 +79,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:hint="Offer"
+            android:hint="@string/what_we_offer"
             android:textColorHint="@color/black"
             app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
 
@@ -95,7 +95,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:hint="Company name"
+            android:hint="@string/company_name"
             android:textColorHint="@color/black"
             app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
 
@@ -131,7 +131,7 @@
                     android:layout_weight="0.5"
                     android:background="@drawable/selector_main_btn"
                     android:padding="5dp"
-                    android:text="Location"
+                    android:text="@string/location"
                     android:textAlignment="center"
                     android:textAllCaps="true"
                     android:textColor="@color/main_btn_text_selector"
@@ -145,7 +145,7 @@
                     android:layout_weight="0.5"
                     android:background="@drawable/selector_main_btn"
                     android:padding="5dp"
-                    android:text="Technologies"
+                    android:text="@string/technologies"
                     android:textAlignment="center"
                     android:textAllCaps="true"
                     android:textColor="@color/main_btn_text_selector"
@@ -164,7 +164,7 @@
                     android:layout_marginEnd="10dp"
                     android:layout_weight="0.5"
                     android:inputType="textMultiLine"
-                    android:text="Pick location"
+                    android:text="@string/pick_location"
                     android:textAlignment="center" />
 
                 <TextView
@@ -173,7 +173,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:inputType="textMultiLine"
-                    android:text="Pick technologies"
+                    android:text="@string/pick_technologies"
                     android:textAlignment="center" />
             </LinearLayout>
         </LinearLayout>
@@ -183,7 +183,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="5dp"
-            android:text="Rrequred level"
+            android:text="@string/rrequred_level"
             android:textColor="@color/black"
             android:textSize="22sp" />
 
@@ -200,21 +200,21 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.33"
-                android:text="Junior" />
+                android:text="@string/junior" />
 
             <CheckBox
                 android:id="@+id/cbMedior"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.33"
-                android:text="Medior" />
+                android:text="@string/medior" />
 
             <CheckBox
                 android:id="@+id/cbSenior"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.33"
-                android:text="Senior" />
+                android:text="@string/senior" />
 
         </LinearLayout>
 

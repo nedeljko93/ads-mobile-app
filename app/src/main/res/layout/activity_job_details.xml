@@ -27,7 +27,7 @@
                 android:id="@+id/tvLocation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Novi sad"
+                tools:text="Novi sad"
                 android:textSize="18sp" />
 
             <ImageView
@@ -40,7 +40,7 @@
                 android:id="@+id/tvCreationDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="12/1/2020"
+                tools:text="12/1/2020"
                 android:textSize="18sp" />
         </LinearLayout>
 
@@ -54,7 +54,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:text="Job description:"
+            android:text="@string/job_description"
             android:textColor="@color/black"
             android:textSize="22sp"
             android:textStyle="bold" />
@@ -81,7 +81,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:text="Requierments:"
+            android:text="@string/requierments"
             android:textColor="@color/black"
             android:textSize="22sp"
             android:textStyle="bold" />
@@ -115,7 +115,7 @@ A history of published Android apps on Google Play Store"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:text="Bonus skills:"
+            android:text="@string/bonus_skills"
             android:textColor="@color/black"
             android:textSize="22sp"
             android:textStyle="bold" />
@@ -146,7 +146,7 @@ Experience with SDK development"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:text="What we offer:"
+            android:text="@string/what_we_offer"
             android:textColor="@color/black"
             android:textSize="22sp"
             android:textStyle="bold" />

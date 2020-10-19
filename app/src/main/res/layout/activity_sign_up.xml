@@ -11,7 +11,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email"
+        android:hint="@string/email"
         android:textColorHint="@color/black"
         app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
 
@@ -26,7 +26,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Name"
+        android:hint="@string/name"
         android:textColorHint="@color/black"
         app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
 
@@ -41,7 +41,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="LastName"
+        android:hint="@string/lastname"
         android:textColorHint="@color/black"
         app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
 
@@ -56,7 +56,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Password"
+        android:hint="@string/password"
         android:textColorHint="@color/black"
         app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
         app:passwordToggleDrawable="@drawable/selector_password_toggle"
@@ -76,7 +76,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Repeat Password"
+        android:hint="@string/repeat_password"
         android:textColorHint="@color/black"
         app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
         app:passwordToggleDrawable="@drawable/selector_password_toggle"

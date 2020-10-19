@@ -34,8 +34,72 @@
     <string name="medior">Medior</string>
     <string name="senior">Senior</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--Apply for the job activity-->
+    <string name="name_and_lastname">Name and lastname</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone number</string>
+    <string name="not_selected">Not selected</string>
+    <string name="apply">Apply</string>
+    <string name="apply_for_the_job">Apply for the %1$s </string>
+
+
+    <!--Job details activity-->
+    <string name="job_description">Job description:</string>
+    <string name="requierments">Requierments:</string>
+    <string name="bonus_skills">Bonus skills:</string>
+    <string name="what_we_offer">What we offer:</string>
+    <!--List of jobs activity-->
+    <string name="jobs">Jobs</string>
+    <string name="posted_jobs">posted jobs</string>
+    <string name="post_job">Post Job</string>
+    <string name="login">Login</string>
+    <string name="log_out">Log out</string>
+    <string name="filters">Filters</string>
+    <string name="location">Location</string>
+    <string name="working_time">Working time</string>
+    <string name="professional_qualifications">Professional qualifications</string>
+    <string name="experience_level">Experience level</string>
+    <!--Login activity-->
+    <string name="password">Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="enter_email">Enter email</string>
+    <string name="enter_password">Enter password</string>
+
+    <!--Main activity-->
+    <string name="joby">Joby</string>
+    <string name="place_where_you_can_easy_find_or_post_a_job">Place where you can easy find or post a job</string>
+    <string name="find_a_job">Find a job</string>
+    <string name="post_a_job">Post a job</string>
+    <string name="skip_login">Skip Login</string>
+
+    <!--Post job activity-->
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="company_name">Company name</string>
+    <string name="technologies">Technologies</string>
+    <string name="pick_location">Pick location</string>
+    <string name="pick_technologies">Pick technologies</string>
+    <string name="requred_level">Rrequred level</string>
+    <string name="apply_changes">Apply Changes</string>
+    <string name="invalid">Invalid</string>
+    <string name="select_requred_level">Please select requred level</string>
+    <string name="update_job">Update job</string>
+
+    <!--Sing up activity-->
+    <string name="name">Name</string>
+    <string name="lastname">LastName</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="succes_msg">You created account successfully</string>
+    <string name="sign_up">Sign up</string>
+    <string name="email_validation_msg">Enter correct email</string>
+    <string name="name_validation_msg">Enter name</string>
+    <string name="lastname_validation_msg">Enter lastname</string>
+    <string name="password_validation_msg">Enter password</string>
+    <string name="repeat_password_validation_msg">Enter correct repeat password</string>
+
+    <!--Dialogs-->
+    <string name="pick">Pick</string>
+    <string name="search">Search</string>
 
 
 </resources>
