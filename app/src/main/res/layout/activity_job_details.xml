@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    tools:context=".ui.JobDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_location" />
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Novi sad"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_time" />
+
+            <TextView
+                android:id="@+id/tvCreationDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12/1/2020"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Job description:"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvJobDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:inputType="textMultiLine"
+            tools:text="Incode is seeking Senior Android engineers to join our mobile development team. We are building flexible SDKs and end-to-end solutions on top of our machine learning technology. You will help to design and build new features for our Android products. A fluid, delightful user interface is the goal, so be ready to use material components and animations to achieve this. You will be working with our engineers to build an easy-to-use, performant and stable Android SDK. You will help us grow a dynamic, international development team. We are looking for smart, driven candidates who want to be part of a culture of innovation and creativity that will revolutionize biometrics."
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/grey" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Requierments:"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvJobRequierments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:inputType="textMultiLine"
+            tools:text="Bachelor’s degree in Computer Science/related field or relevant working experience
+3+ years of professional Android native app development
+Understanding of Android design principles and interface guidelines
+Deep understanding of camera functionality
+Experience with Android MVP/related architecture patterns
+Experience with REST APIs
+Experience with SCRUM or Kanban
+Experience with Git
+A history of published Android apps on Google Play Store"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Bonus skills:"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvBonusSkills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:inputType="textMultiLine"
+            tools:text="Experience with Dependency Injection frameworks
+Experience with RxJava
+Open source contributor
+Familiarity with AWS
+Interest in machine learning and image processing
+Experience with SDK development"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="What we offer:"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvOffer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:inputType="textMultiLine"
+            tools:text="The result of your work will be integrated into the products of world leading companies
+Professional and academic development in cutting edge technologies, including external trainings and certification
+Well paid job
+Work in a new and modern setting with the latest platforms and tools
+Pleasant and relaxed atmosphere, team spirit, team-building activities (recreation, entertainment, cultural events ... )
+Flexible work schedule and casual dress code
+Possibility to travel and work abroad in joint projects with global leading companies
+"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/grey" />
+
+    </LinearLayout>
+
+
+</ScrollView>

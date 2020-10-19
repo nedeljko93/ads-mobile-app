@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.SignUpActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textColorHint="@color/black"
+        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etSignUpEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textColorHint="@color/black"
+        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="LastName"
+        android:textColorHint="@color/black"
+        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColorHint="@color/black"
+        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+        app:passwordToggleDrawable="@drawable/selector_password_toggle"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/blue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etSignUpPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Repeat Password"
+        android:textColorHint="@color/black"
+        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+        app:passwordToggleDrawable="@drawable/selector_password_toggle"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/blue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etSignUpRepeatPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="places">
+     <item>@string/novi_sad</item>
+     <item>@string/nis</item>
+     <item>@string/beograd</item>
+     <item>@string/sombror</item>
+     <item>@string/subotica</item>
+     <item>@string/kragujevac</item>
+     <item>@string/vranje</item>
+     <item>@string/zrenjanin</item>
+     <item>@string/jagodina</item>
+     <item>@string/kraljevo</item>
+     <item>@string/leskovac</item>
+     <item>@string/loznica</item>
+     <item>@string/krusevac</item>
+     <item>@string/pancevo</item>
+     <item>@string/pozarevac</item>
+     <item>@string/smederevo</item>
+     <item>@string/sremska_mitrovica</item>
+     <item>@string/sabac</item>
+     <item>@string/uzice</item>
+     <item>@string/zajacar</item>
+     <item>@string/cacak</item>
+     <item>@string/valjevo</item>
+     <item>@string/novi_pazar</item>
+    </string-array>
+
+
+</resources>

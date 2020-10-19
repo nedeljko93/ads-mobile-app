@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">AdsMobileApp</string>
+    <string name="remote">Remote</string>
+
+    <string name="novi_sad">Novi sad</string>
+    <string name="nis">Nis</string>
+    <string name="beograd">Beograd</string>
+    <string name="sombror">Sombor</string>
+    <string name="subotica">Subotica</string>
+    <string name="kragujevac">Kragujevac</string>
+    <string name="vranje">Vranje</string>
+    <string name="zrenjanin">Zrenjanin</string>
+    <string name="jagodina">Jagodina</string>
+    <string name="kraljevo">Kraljevo</string>
+    <string name="leskovac">Leskovac</string>
+    <string name="loznica">Loznica</string>
+    <string name="krusevac">Krusevac</string>
+    <string name="pancevo">Pancevo</string>
+    <string name="pozarevac">Pozarevac</string>
+    <string name="smederevo">Smederevo</string>
+    <string name="sremska_mitrovica">Sremska Mitrovica</string>
+    <string name="sabac">Sabac</string>
+    <string name="uzice">Uzice</string>
+    <string name="zajacar">Zajacar</string>
+    <string name="cacak">Cacak</string>
+    <string name="valjevo">Valjevo</string>
+    <string name="novi_pazar">Novi Pazar</string>
+
+    <string name="part_time">Part time</string>
+    <string name="full_time">Full time</string>
+
+
+    <string name="junior">Junior</string>
+    <string name="medior">Medior</string>
+    <string name="senior">Senior</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

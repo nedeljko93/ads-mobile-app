@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itemLocation"
+        android:icon="@drawable/ic_location"
+        android:title="Location" />
+
+    <item
+        android:id="@+id/itemDate"
+        android:icon="@drawable/ic_time"
+        android:title="Date" />
+    <item
+        android:id="@+id/lvl"
+        android:title="Expirience level" />
+
+</menu>
