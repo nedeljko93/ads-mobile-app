@@ -47,7 +47,6 @@ public class JobsListFragmentPagerAdapter extends FragmentStatePagerAdapter {
 
     public JobsListFragment getJobsListFragment() {
         notifyDataSetChanged();
-
         return jobsListFragment1;
     }
 
