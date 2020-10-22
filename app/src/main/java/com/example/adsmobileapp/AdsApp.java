@@ -15,9 +15,7 @@ public class AdsApp extends Application {
 
     }
 
-    public static AdsApp getmInstance() {
-        return mInstance;
-    }
+
 
     public static LocalData getLocalData() {
         if (localData == null) {

@@ -78,7 +78,9 @@ public class PostJobActivity extends BaseActivity implements CompoundButton.OnCh
     @Override
     protected void layoutReady() {
         initUI();
-        populateData();
+        if (job != null) {
+            populateData();
+        }
     }
 
     @Override
